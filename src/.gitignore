@@ -1,0 +1,73 @@
+# Application
+web/app/languages/*
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+
+# Build files
+dist
+build
+.config
+
+# Cache
+web/app/cache/borlabs-cookie
+!web/app/cache/.gitkeep
+web/app/cache/minify/**/*
+!web/app/cache/minify/.gitkeep
+!web/app/cache/minify/.htaccess
+web/app/cache/page_enhanced/**/*
+!web/app/cache/page_enhanced/.gitkeep
+!web/app/cache/page_enhanced/.htaccess
+web/app/w3tc-config/*
+!web/app/w3tc-config/.gitkeep
+
+# Updraft Backup Plus
+web/app/updraft/*
+!web/app/updraft/.gitkeep
+
+# Wordfence
+web/app/wflogs/*
+!web/app/wflogs/.gitkeep
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+!.env.ci
+
+# Composer
+.composer
+vendor
+
+# WP-CLI
+wp-cli.local.yml
+
+# Node.js
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+node_modules
+.npm
+.eslintcache
+
+# Custom Plugins
+!web/app/plugins/borlabs-cookie
+!web/app/plugins/cm-core-functionality
+!web/app/plugins/cm-herakles-plugin
+!web/app/plugins/cm-hermes-plugin
+!web/app/plugins/cm-jarvis-integration
+
+# Custom Themes
+!web/app/themes/cm

@@ -1,0 +1,34 @@
+{
+  "automerge": true,
+  "automergeType": "branch",
+  "bumpVersion": "patch",
+  "extends": ["config:base", "group:allNonMajor", ":pinDependencies"],
+  "lockFileMaintenance": {
+    "automerge": true,
+    "enabled": true
+  },
+  "schedule": "on monday and friday before 9:00am",
+  "timezone": "Europe/Berlin",
+  "semanticCommits": "enabled",
+  "separateMajorMinor": false,
+  "vulnerabilityAlerts": {
+    "labels": ["security"]
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["roots/wordpress"],
+      "schedule": "before 5:00am"
+    },
+    {
+      "packageNames": [
+        "jest",
+        "ts-jest",
+        "jest-playwright-preset",
+        "@types/jest-image-snapshot",
+        "jest-image-snapshot"
+      ],
+      "groupName": "jest",
+      "groupSlug": "jest-ts-jest"
+    }
+  ]
+}
